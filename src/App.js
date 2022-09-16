@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import JsxIfElseSample from "./jsxSample/JsxIfElseSample";
+import JsxMapObjectArraySample from "./jsxSample/JsxMapObjectArraySample";
+import JsxMapSample from "./jsxSample/JsxMapSample";
+import JsxStyle from "./jsxSample/JsxStyle";
+import Footer from "./templateSamples/template-1/Footer";
+import Header from "./templateSamples/template-1/Header";
+import Navbar from "./templateSamples/template-1/Navbar";
+import PageContent from "./templateSamples/template-1/PageContent";
 
+
+//Boş düğüme Fragment denir
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    <Header/>
+    <PageContent/>
+    <Footer/>
+
+    </>
   );
 }
 
