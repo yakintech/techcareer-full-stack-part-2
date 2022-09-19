@@ -1,1 +1,6 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+
+
+prop-types
+https://www.freecodecamp.org/news/how-to-use-proptypes-in-react/
+
