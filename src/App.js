@@ -4,7 +4,11 @@ import CityList from "./propSample/CityList";
 import ProductDetail from "./propSample/ProductDetail";
 import UserDetail from "./propSample/UserDetail";
 import ArraySample from "./state/ArraySample";
+import CategoryTable from "./state/CategoryTable";
 import CounterSample from "./state/CounterSample";
+import ParentCounter from "./state/ParentCounter";
+import ToDoListSample from "./state/ToDoListSample";
+import ToggleStateSample from "./state/ToggleStateSample";
 
 function App() {
 
@@ -12,16 +16,12 @@ function App() {
 
 
   const hello = () => {
-      alert('Hello React Props!!');
+    alert('Hello React Props!!');
   }
 
   return (
     <>
-      {/* <UserDetail name='Çağatay' surname={'Yıldız'} age={18}></UserDetail>
-      <CityList cities={citiesSource}/>
-      <ChildComp merhaba={hello}/> */}
-      {/* <CounterSample/> */}
-      <ArraySample/>
+      <ParentCounter />
     </>
   );
 }
