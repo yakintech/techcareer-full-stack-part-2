@@ -6,6 +6,7 @@ import UserDetail from "./propSample/UserDetail";
 import ArraySample from "./state/ArraySample";
 import CategoryTable from "./state/CategoryTable";
 import CounterSample from "./state/CounterSample";
+import InputChangeSample from "./state/InputChangeSample";
 import ParentCounter from "./state/ParentCounter";
 import ToDoListSample from "./state/ToDoListSample";
 import ToggleStateSample from "./state/ToggleStateSample";
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <>
-      <ParentCounter />
+      <InputChangeSample />
     </>
   );
 }
