@@ -1,2 +1,9 @@
 https://www.w3schools.com/w3css/tryw3css_templates_architect.htm
 template giydirme!
+
+
+26 Eylül
+/suppliers adında bir route aç. Supplier ları table a listele
+/suppliers/:id adında bir route aç ve supplierdetayını oraya yaz
+
+fetch veya axios ile
