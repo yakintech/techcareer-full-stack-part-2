@@ -7,6 +7,7 @@ import CategoryDetail from "./routerSample/CategoryDetail";
 import ChildSample from "./routerSample/ChildSample";
 import GuardSample from "./routerSample/GuardSample";
 import LoginPage from "./routerSample/LoginPage";
+import LocationSample from "./routerSample/LocationSample";
 
 
 
@@ -22,8 +23,7 @@ function App() {
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/categories'>Category List</Link></li>
         <li><Link to='/guardsample'>Guard Sample</Link></li>
-
-
+        <li><Link to='/location'>Location Sample</Link></li>
       </ul>
 
 
@@ -39,8 +39,9 @@ function App() {
             <ChildSample />
           </GuardSample>
         }>
-
         </Route>
+        <Route path="/location" element={<LocationSample />}></Route>
+
 
       </Routes>
       <h1>Site Footer</h1>
