@@ -4,3 +4,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/imp
 prop-types
 https://www.freecodecamp.org/news/how-to-use-proptypes-in-react/
 
+vuejs belgesel
+https://www.youtube.com/watch?v=OrxmtDw4pVI
+
+
+
