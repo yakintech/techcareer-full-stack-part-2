@@ -8,4 +8,7 @@ vuejs belgesel
 https://www.youtube.com/watch?v=OrxmtDw4pVI
 
 
+redux video
+https://www.youtube.com/watch?v=kwGIgfbYWrQ
+
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="counter">0</h1>
+    <button id="increase">Increase</button>
+    <button id="descrease">Descrease</button>
+
+
+</body>
+<script>
+
+
+    //reducer
+    function counter(state, action) {
+
+        if (typeof state === 'undefined') {
+            return 0
+        }
+
+        switch (action.type) {
+            case 'increase':
+                return state + 1
+            case 'descrease':
+                return state - 1
+            default:
+                return state
+        }
+
+    }
+
+    let store = Redux.createStore(counter)
+
+
+    function render() {
+        document.getElementById('counter').innerHTML = store.getState().toString()
+    }
+
+    function hello() {
+        console.log('aman da aman sende redux!')
+    }
+
+    store.subscribe(render)
+    store.subscribe(hello)
+
+
+    document.getElementById('increase').addEventListener('click', function () {
+        store.dispatch({ type: 'increase' })
+    })
+
+    document.getElementById('descrease').addEventListener('click', function () {
+        store.dispatch({ type: 'descrease' })
+    })
+
+</script>
+
+</html>
