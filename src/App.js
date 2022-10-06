@@ -31,7 +31,7 @@ function App(props) {
 
   const { cart } = useContext(CartContext);
 
-  let archives = useSelector(state => state);
+  let archives = useSelector(state => state.todoReducer);
 
   const items = [
     { label: <Link to='/'>Home</Link>, key: '1' },

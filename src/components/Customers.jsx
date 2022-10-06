@@ -141,7 +141,7 @@ const mapStateToProps = (state) => {
 
     //favorites -> prop name of global state
     return {
-        favorites: state
+        favorites: state.favoriteReducer
     }
 }
 

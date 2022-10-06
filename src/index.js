@@ -5,14 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import App from './App';
 import { CartProvider } from './contextSample/CartContext';
-import { favoriteReducer } from './redux/reducers/favorites.reducer';
-import { todoReducer } from './redux/reducers/todos.reducer';
+import mainReducer from './redux/reducers'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // const store = createStore(favoriteReducer);
+// const store = createStore(todoReducer);
+ const store = createStore(mainReducer);
 
-const store = createStore(todoReducer);
 
 root.render(
     <BrowserRouter>

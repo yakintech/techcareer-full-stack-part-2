@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 function Archives() {
 
-    let archives = useSelector(state => state);
+    let archives = useSelector(state => state.todoReducer);
 
     let dispatch = useDispatch();
 

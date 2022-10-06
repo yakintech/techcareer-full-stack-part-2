@@ -52,7 +52,7 @@ function Favorites({ favorites, removeFavorites, removeAll }) {
 
 const mapStateToProps = (state) => {
   return {
-    favorites: state
+    favorites: state.favoriteReducer
   }
 }
 

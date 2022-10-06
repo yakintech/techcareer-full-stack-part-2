@@ -11,7 +11,9 @@ function Todos() {
     const dispatch = useDispatch()
 
     //map state to props. UseSelector ile state e ulaşıyorum.
-    let archiveList = useSelector(state => state);
+    let archiveList = useSelector(state => state.todoReducer);
+
+
 
     useEffect(() => {
 
